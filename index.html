@@ -79,13 +79,16 @@
 
 
 
+<meta name="description" content="思考 分享 技术 随笔">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="非攻">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="非攻">
+<meta property="og:description" content="思考 分享 技术 随笔">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="非攻">
+<meta name="twitter:description" content="思考 分享 技术 随笔">
 
 
 
@@ -121,7 +124,7 @@
 
 
 
-  <title>Hexo</title>
+  <title>非攻</title>
   
 
 
@@ -152,12 +155,12 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">非攻</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">术无正邪,勿忘初心</p>
       
   </div>
 
@@ -232,13 +235,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/02/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="隐默者殇">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="非攻">
     </span>
 
     
@@ -273,6 +276,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/09/02/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/02/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -383,8 +396,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-author-name" itemprop="name">隐默者殇</p>
+              <p class="site-description motion-element" itemprop="description">思考 分享 技术 随笔</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -439,7 +452,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">隐默者殇</span>
 
   
 </div>
@@ -599,6 +612,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'u4JNfT9LJh5YNBebKbACe38i-gzGzoHsz',
+        appKey: 'qM88ogrG5P2rytw0SP9LNjle',
+        placeholder: '欢迎交流',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
